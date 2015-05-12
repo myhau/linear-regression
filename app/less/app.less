@@ -1,0 +1,38 @@
+/* ==========================================================================
+   App Stylesheet
+   app.less
+   ========================================================================== */
+
+
+/* Vendor Styles and Setting (bootstrao > variables)
+   ======================================================================== */
+@import "bootstrap.less";
+
+
+/* Mixins (User defined mixins)
+   ======================================================================== */
+.regression {
+    stroke: blue;
+    fill: none;
+}
+
+#mainSvg {
+    // border: 1px solid;
+}
+
+.axis line, 
+.axis path {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+}
+
+/* Components
+   ======================================================================== */
+@import "components/base.less";

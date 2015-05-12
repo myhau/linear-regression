@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visualization of how linear regression works.">
+    <meta name="author" content="Michal Fudala">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+
+    <title>Linear Regression</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="../../dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/styles/app.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  </head>
+
+  <body>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1> Linear Regression </h1>
+        <div class="col-md-12" style="margin-top:50px">
+          <div class="col-md-8">
+            <div id="divSvg">
+              <svg id="mainSvg">
+                <g></g>
+              </svg>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <form>
+              <div class="form-group">
+                <label for="inputDegree" id="labelDegree">Polynomial Degree</label>
+                <input type="number" name="degree" min="0" id="inputDegree" class="form-control" value="1" required="required" title="Degree">
+              </div>
+              <div class="form-group">  
+                <label for="inputError">Error</label>
+                <input type="text" name="error" id="inputError" class="form-control" value="" title="Error" readonly>
+              </div>
+                <button type="button" id="resetButton" class="btn btn-warning">Reset</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--
+    Scripts
+    ==================================================
+    Placed at the end of the document so the pages load faster -->
+    <!-- <script src="scripts/app.js"></script> -->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
